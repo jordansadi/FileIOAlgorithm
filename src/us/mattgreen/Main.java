@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ *
+ * Created by jsadi on 9/8/2018.
+ * @author Jordan Sadi
+ * @version 2018 0908 .3
+ */
 public class Main {
 
     private final static FileInput indata = new FileInput("meals_data.csv");
