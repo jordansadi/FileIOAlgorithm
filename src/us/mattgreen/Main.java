@@ -83,6 +83,7 @@ public class Main {
         }
         mealsArray.printMealsByType(mealType);
     }
+
     private static void searchByName() {
         keyboard.nextLine();
         System.out.print("Please Enter Value: ");
