@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * This is the driver method for this package.
+ * Created by jsadi on 9/8/2018.
+ * @author Jordan Sadi
+ * @version 2018 0908 .3
+ */
 public class Main {
 
     private final static FileInput indata = new FileInput("meals_data.csv");
@@ -21,6 +27,9 @@ public class Main {
         runMenu();
     }
 
+    /**
+     * This method prints the menu one line at a time and then waits for input from the user.
+     */
     private static void printMenu() {
         System.out.println("Select Action");
         System.out.println("1. List All Items");
@@ -30,6 +39,9 @@ public class Main {
         System.out.print("Please Enter your Choice: ");
     }
 
+    /**
+     * This method accepts input from the user and then runs a specified method based on the input.
+     */
     private static void runMenu() {
         char ans;
         boolean userContinue = true;
@@ -44,10 +56,13 @@ public class Main {
             }
         }
     }
+
+    /**
+     * This method accepts a specified type of meal from the user and prints all Meals of that type.
+     */
     private static void listByMeal() {
         char ans;
         int ansNum=0;
-        boolean userContinue = true;
         MealType mealType;
         ArrayList<MealType> mealTypeName = new ArrayList<>();
 
@@ -77,6 +92,10 @@ public class Main {
         }
         mealsArray.printMealsByType(mealType);
     }
+
+    /**
+     * This method accepts input from the user, then searches for and prints all Meals containing that specified term.
+     */
     private static void searchByName() {
         keyboard.nextLine();
         System.out.print("Please Enter Value: ");
